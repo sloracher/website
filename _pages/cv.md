@@ -14,7 +14,7 @@ permalink: /cv/
     <p>Coordinating, Planning, Agile</p>
   </div>
   <div class="skill-panel" data-aos="fade-up" data-aos-delay="200">
-    <h4>Data Analysis</h4>
+    <h4>Data Analysis </h4>
     <p>Python, R, SQL</p>
   </div>
   <div class="skill-panel" data-aos="fade-up" data-aos-delay="300">
