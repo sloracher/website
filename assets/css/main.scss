@@ -53,3 +53,7 @@ body {
 /* Hide FEED + search icon */
 .page__footer .feed-subscribe { display: none; }
 .search__toggle { display: none; }
+
+/* Let LinkedIn icon follow the same color as the other icons */
+.author__urls .fa-linkedin,
+.author__urls .fa-linkedin-in { color: currentColor; background: none; }
