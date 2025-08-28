@@ -1,4 +1,4 @@
-main:
+# main:
   - title: "Curriculum Vitae"
     url: /cv/
   - title: "Contact"
