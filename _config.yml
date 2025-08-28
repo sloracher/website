@@ -9,7 +9,7 @@ description: >-
   Google search results) and in your feed.xml site description.
 github_username: "sloracher"
 minimal_mistakes_skin: "default"
-search: true
+search: false
 
 # If your site is published at a custom domain, set these:
 # url: "https://stefanieloracher.com"   # the base hostname & protocol
