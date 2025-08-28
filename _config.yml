@@ -1,50 +1,68 @@
-# Site settings
-title: Stefanie Loracher
-email: s.loracher@tuta.io
+# =========================
+# Site Settings
+# =========================
+title: "Stefanie Loracher"
+email: "s.loracher@tuta.io"
 description: >-
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-github_username: sloracher
-minimal_mistakes_skin: default
+github_username: "sloracher"
+minimal_mistakes_skin: "default"
 search: true
 
-# Build settings
+# If your site is published at a custom domain, set these:
+# url: "https://stefanieloracher.com"   # the base hostname & protocol
+# baseurl: ""                           # the subpath of your site, e.g. "/blog" (leave blank for root)
+
+# =========================
+# Build Settings
+# =========================
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes"
+timezone: "Europe/Berlin"
 
-# Outputting
-permalink: /:categories/:title/
+# =========================
+# Output / URLs
+# =========================
+permalink: "/:categories/:title/"
+# To enable a paginated blog index, uncomment these:
 # paginate: 5
-# paginate_path: /page:num/
-timezone: Europe/Berlin
+# paginate_path: "/page:num/"
 
+# =========================
+# Include / Exclude
+# =========================
 # include:
 #   - _pages
 
-# Exclude from processing.
 exclude:
   - _posts
-#  - Gemfile
-#  - Gemfile.lock
-#  - node_modules
-#  - vendor/bundle/
-#  - vendor/cache/
-#  - vendor/gems/
-#  - vendor/ruby/
+  # - Gemfile
+  # - Gemfile.lock
+  # - node_modules
+  # - vendor/bundle/
+  # - vendor/cache/
+  # - vendor/gems/
+  # - vendor/ruby/
 
-# Plugins (previously gems:)
+# =========================
+# Plugins
+# =========================
 plugins:
-  # - jekyll-paginate
+  # - jekyll-paginate   # only if you want a paginated blog index
   - jekyll-sitemap
   - jekyll-gist
-  # - jekyll-feed
+  # - jekyll-feed       # RSS feed (optional)
   - jemoji
   - jekyll-include-cache
   - jekyll-redirect-from
 
+# =========================
+# Author Profile (Minimal Mistakes)
+# =========================
 author:
-  name: "Stefanie Loracher1"
+  name: "Stefanie Loracher1"   # (Optional) change to "Stefanie Loracher" if the '1' was accidental
   avatar: "/assets/images/bio-photo.jpg"
   bio: |
     “Always remember that it is impossible to speak in such a way that you cannot be misunderstood:
@@ -64,20 +82,11 @@ author:
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
 
-# footer:
-#   links:
-#     - label: "Twitter"
-#       icon: "fab fa-fw fa-twitter-square"
-#       url: "https://twitter.com/"
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       url: "https://github.com/"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://instagram.com/"
-
+# =========================
+# Theme Defaults
+# =========================
 defaults:
-  # _posts
+  # _posts (kept for completeness—safe even if _posts is excluded)
   - scope:
       path: ""
       type: posts
@@ -88,6 +97,7 @@ defaults:
       comments: true
       share: true
       related: true
+
   # _pages
   - scope:
       path: "_pages"
@@ -96,6 +106,9 @@ defaults:
       layout: single
       author_profile: true
 
+# =========================
+# Archives (Minimal Mistakes)
+# =========================
 category_archive:
   type: liquid
   path: /categories/
