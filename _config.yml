@@ -64,10 +64,10 @@ plugins:
 author:
    # name: "Stefanie Loracher"   
   avatar: "/assets/images/bio-photo.jpg"
-  bio: |
-    “Always remember that it is impossible to speak in such a way that you cannot be misunderstood:
-    there will always be some who misunderstand you.”··
-    ― Karl Popper
+  bio: |-
+    „Always remember that it is impossible to speak in such a way that you cannot be misunderstood:
+    there will always be some who misunderstand you.“<br>
+    <span class="attribution">— Karl Popper</span>
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
