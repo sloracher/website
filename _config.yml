@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Stefanie Loracher1
+title: Stefanie Loracher
 email: s.loracher@tuta.io
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -51,15 +51,15 @@ include:
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
+ # - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
-  - jekyll-feed
+#  - jekyll-feed
   - jemoji
   - jekyll-include-cache
 
 author:
-  name   : "Stefanie Loracher"
+  name   : "Stefanie Loracher1"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "“Always remember that it is impossible to speak in such a way that you cannot be misunderstood: there will always be some who misunderstand you.”
   ― Karl Popper"
