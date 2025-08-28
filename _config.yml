@@ -62,7 +62,7 @@ plugins:
 # Author Profile (Minimal Mistakes)
 # =========================
 author:
-  name: "Stefanie Loracher1"   # (Optional) change to "Stefanie Loracher" if the '1' was accidental
+  name: "Stefanie Loracher"   
   avatar: "/assets/images/bio-photo.jpg"
   bio: |
     “Always remember that it is impossible to speak in such a way that you cannot be misunderstood:
