@@ -60,7 +60,8 @@ plugins:
 author:
   name   : "Stefanie Loracher"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "“While differing widely in the various little bits we know, in our infinite ignorance we are all equal.”
+― Karl R. Popper "
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
