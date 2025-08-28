@@ -60,8 +60,8 @@ plugins:
 author:
   name   : "Stefanie Loracher"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "“While differing widely in the various little bits we know, in our infinite ignorance we are all equal.”
-― Karl R. Popper "
+  bio    : "“Always remember that it is impossible to speak in such a way that you cannot be misunderstood: there will always be some who misunderstand you.”
+  ― Karl Popper"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
