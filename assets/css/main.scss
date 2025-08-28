@@ -5,6 +5,13 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+.author__bio .attribution {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.9em;
+  color: #6b7280;
+}
+
 /* System font stack + comfy defaults */
 body {
   font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto,
