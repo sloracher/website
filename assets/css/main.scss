@@ -48,42 +48,8 @@ body {
 /* Vertical rhythm */
 .page__content > * + * { margin-top: 1.1em; }
 
-/* ===================== */
-/* Intro (lead)          */
-/* ===================== */
-
-/* In Markdown: put a blank line, then `{: .lead }` after the intro paragraph */
-.page__content .lead {
-  font-size: 1.05rem !important;
-  line-height: 1.55 !important;
-  margin-bottom: 0.7rem !important;
-  text-align: justify !important;
-  text-justify: inter-word;
-  -webkit-hyphens: auto !important;
-  -ms-hyphens: auto !important;
-  hyphens: auto !important;
-}
-
 /* Everywhere else: avoid hyphenation */
 .page__content p,
 .page__content li { hyphens: none !important; }
 
-/* ===================== */
-/* Collapsible sections  */
-/* ===================== */
 
-details { margin: 0 0 0.9rem 0; }
-details > summary {
-  cursor: pointer;
-  font-weight: 600;
-  list-style: none;
-  font-size: 1rem;
-}
-details > summary::-webkit-details-marker { display: none; }
-details > summary::before {
-  content: "\25B8"; /* triangle ▸ */
-  display: inline-block;
-  margin-right: 0.5rem;
-  transition: transform 0.2s ease;
-}
-details[open] > summary::before { transform: rotate(90deg); }
