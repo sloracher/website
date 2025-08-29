@@ -81,6 +81,9 @@ details > summary {
 }
 details > summary::-webkit-details-marker { display: none; }
 details > summary::before {
-  content: "▸";
+  content: "\25B8"; /* triangle ▸ */
   display: inline-block;
-  margin-right:
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease;
+}
+details[open] > summary::before { transform: rotate(90deg); }
