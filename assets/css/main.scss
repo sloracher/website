@@ -110,6 +110,27 @@ details li + li { margin-top: .3rem; }           /* breathing room between bulle
 
 
 
+/* Turn OFF auto-hyphenation in the content area */
+.page__content p,
+.page__content li {
+  hyphens: none !important;
+}
+
+/* Tighten the lead paragraph (the intro) */
+.page__content .lead {
+  font-size: 1.05rem !important;   /* keep modest size */
+  line-height: 1.55 !important;    /* was ~1.7–1.8 */
+  margin-bottom: 0.7rem !important;
+}
+
+/* Optional: slightly reduce overall body line height if you want */
+body { line-height: 1.6; }
+
+
+
+
+
+
 
 /* ===== ultra-compact footer ===== */
 .page__footer {
