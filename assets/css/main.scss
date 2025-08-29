@@ -58,6 +58,33 @@ body {
 .author__urls .fa-linkedin,
 .author__urls .fa-linkedin-in { color: currentColor; background: none; }
 
+/* Collapsible sections */
+details { margin: 0 0 .75rem 0; }
+details > summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+details > summary::-webkit-details-marker { display: none; }
+details > summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: .5rem;
+  transition: transform .2s ease;
+}
+details[open] > summary::before { transform: rotate(90deg); }
+
+/* Optional: subtle box around nested project details only */
+details details {
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 6px;
+  padding: .5rem .75rem;
+  background: transparent;
+}
+
+
+
+
 
 /* ===== ultra-compact footer ===== */
 .page__footer {
