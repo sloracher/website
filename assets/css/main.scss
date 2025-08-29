@@ -5,6 +5,26 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+/* Compact footer */
+.page__footer {
+  padding: 0.5rem 0;      /* was larger */
+  margin-top: 1.25rem;    /* less empty space above */
+  border-top: 1px solid rgba(0,0,0,.06); /* lighter (or set to 'none') */
+}
+.page__footer .wrapper { max-width: 68ch; }   /* align with content width (optional) */
+.page__footer .copyright {
+  margin: 0;              /* remove default paragraph margins */
+  font-size: 0.85rem;     /* smaller text */
+  line-height: 1.4;
+  color: #6b7280;         /* subtle */
+}
+
+/* even tighter on large screens (optional) */
+@media (min-width: 992px) {
+  .page__footer { padding: 0.4rem 0; }
+}
+
+
 .author__bio .attribution {
   display: block;
   margin-top: 0.25rem;
