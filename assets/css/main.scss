@@ -2,31 +2,28 @@
 # Only the main Sass file needs front matter
 ---
 
+/* Theme + skin */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-.author__bio .attribution {
-  display: block;
-  margin-top: 0.25rem;
-  font-size: 0.9em;
-  color: #6b7280;
-}
+/* ===================== */
+/* Base & Typography     */
+/* ===================== */
 
-/* System font stack + comfy defaults */
 body {
   font-family: ui-sans-serif, -apple-system, "Segoe UI", Roboto,
                "Helvetica Neue", Arial, "Noto Sans", sans-serif,
                "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 17px;
-  line-height: 1.7;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Narrower, calmer reading width */
-.page__content { max-width: 68ch; }
+/* Main content column width (harmonizes with the left profile column) */
+.page__content { max-width: 64ch; }
 
-/* Quieter page title (Sass-safe with calc) */
+/* Page title: calm, responsive */
 .page__title {
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -35,11 +32,12 @@ body {
   margin-bottom: 0.6em;
 }
 
-/* Sidebar polish */
+/* Author card polish (left column) */
 .author__name { font-size: 1.05rem; font-weight: 600; }
 .author__bio  { font-size: 0.95rem; line-height: 1.6; color: #6b7280; }
+.author__bio .attribution { display: block; margin-top: 0.25rem; font-size: 0.9em; color: #6b7280; }
 
-/* Understated links */
+/* Links: understated */
 .page__content a {
   text-decoration: underline;
   text-underline-offset: 0.16em;
@@ -47,125 +45,15 @@ body {
 }
 .page__content a:hover { text-decoration-thickness: 0.10em; }
 
-/* Even spacing between blocks */
+/* Comfortable rhythm between blocks */
 .page__content > * + * { margin-top: 1.1em; }
 
-/* Hide FEED + search icon */
-.page__footer .feed-subscribe { display: none; }
-.search__toggle { display: none; }
+/* ===================== */
+/* Intro (lead)          */
+/* ===================== */
 
-/* Let LinkedIn icon follow the same color as the other icons */
-.author__urls .fa-linkedin,
-.author__urls .fa-linkedin-in { color: currentColor; background: none; }
-
-/* Collapsible sections */
-details { margin: 0 0 .75rem 0; }
-details > summary {
-  cursor: pointer;
-  font-weight: 600;
-  list-style: none;
-}
-details > summary::-webkit-details-marker { display: none; }
-details > summary::before {
-  content: "▸";
-  display: inline-block;
-  margin-right: .5rem;
-  transition: transform .2s ease;
-}
-details[open] > summary::before { transform: rotate(90deg); }
-
-/* Optional: subtle box around nested project details only */
-details details {
-  border: 1px solid rgba(0,0,0,.08);
-  border-radius: 6px;
-  padding: .5rem .75rem;
-  background: transparent;
-}
-
-
-
-/* Elegant body styling */
-.page__content { max-width: 64ch; }              /* slightly narrower for calm reading */
-.page__content p { hyphens: auto; }
-
-/* Lead paragraph: a touch larger + softer color */
+/* Use kramdown attribute: a blank line, then `{: .lead }` after your intro paragraph */
 .page__content .lead {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #374151;                                 /* muted slate */
-  margin-bottom: 0.85rem;
-}
-
-/* Collapsibles: clearer affordance + tidy lists */
-details { margin: 0 0 .9rem 0; }
-details > summary { cursor: pointer; font-weight: 600; list-style: none; }
-details > summary::-webkit-details-marker { display: none; }
-details > summary::before {
-  content: "▸"; display: inline-block; margin-right: .5rem; transition: transform .2s ease;
-}
-details[open] > summary::before { transform: rotate(90deg); }
-details ul { padding-left: 1.2rem; margin: .4rem 0 0 0; }
-details li + li { margin-top: .3rem; }           /* breathing room between bullets */
-
-
-
-
-/* Turn OFF auto-hyphenation in the content area */
-.page__content p,
-.page__content li {
-  hyphens: none !important;
-}
-
-/* Tighten the lead paragraph (the intro) */
-.page__content .lead {
-  font-size: 1.05rem !important;   /* keep modest size */
-  line-height: 1.55 !important;    /* was ~1.7–1.8 */
+  font-size: 1.05rem !important;
+  line-height: 1.55 !important;
   margin-bottom: 0.7rem !important;
-}
-
-/* Optional: slightly reduce overall body line height if you want */
-body { line-height: 1.6; }
-
-
-
-
-
-
-
-/* ===== ultra-compact footer ===== */
-.page__footer {
-  /* 4) shrink grey background height */
-  padding-top: 0.12rem !important;
-  padding-bottom: 0.12rem !important;
-  margin-top: 0.6rem !important;
-  border-top: none !important;
-  min-height: 0 !important;
-  text-align: left !important;   /* 2) left align */
-}
-
-.page__footer .wrapper {
-  /* keep it flush-left and remove any extra padding */
-  max-width: 68ch;               /* match your content width (optional) */
-  margin: 0 !important;
-  padding: 0 !important;
-  text-align: left !important;
-}
-
-.page__footer p,
-.page__footer .copyright {
-  /* 3) smaller type, no extra spacing */
-  font-size: 0.6rem !important;
-  line-height: 1.35 !important;
-  margin: 0 !important;
-  text-align: left !important;
-}
-
-/* safety: kill any hidden separators */
-.page__footer hr,
-.page__footer .wrapper:before { display: none !important; content: none !important; }
-
-
-/* safety: if any hidden divider remains, kill it */
-.page__footer hr,
-.page__footer .wrapper:before { display: none !important; content: none !important; }
-
