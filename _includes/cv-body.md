@@ -7,40 +7,25 @@ This page outlines how I work and where I add value.
 
 
 {% comment %}
-{: .lead }
 
-
-<details open markdown="1">
-  <summary><strong>Where I add value</strong></summary>
+Where I add value
 
 - Translate between engineering, product, and leadership so decisions are made on shared facts.
 - Turn competing priorities into a single, visible plan with clear owners and checkpoints.
 - Surface assumptions early; remove ambiguity in requirements, interfaces, and timelines.
 - Keep momentum: short feedback loops, crisp reviews, and visible risk management.
-</details>
 
-<details>
-  <summary><strong>Selected outcomes</strong></summary>
+- 
+Project snapshots
 
-- Reduced cross-team review cycles by **40%** by standardizing decision briefs and hand-offs.
-- Unblocked a stalled RF/firmware integration in **3 weeks** by reframing requirements and creating a joint test plan.
-- Delivered a multi-disciplinary prototype **on time** by aligning milestones across three vendors and two internal teams.
-</details> 
-
-<details>
-  <summary><strong>Project snapshots</strong></summary>
-
-<details>
-  <summary><strong>RF module → system integration (2024)</strong></summary>
+RF module → system integration (2024)
 
 **Role:** Technical translator & program lead  
 **Situation:** Teams argued over root cause; roadmap slipping.  
 **Action:** Unified language for requirements, defined interface contracts, set weekly decision reviews.  
 **Result:** Clear priorities, defects retired, schedule back on track.
-</details>
 
-<details>
-  <summary><strong>Cross-site collaboration re-boot (2023)</strong></summary>
+Cross-site collaboration re-boot (2023)
 
 **Role:** Facilitator  
 **Situation:** Dif
