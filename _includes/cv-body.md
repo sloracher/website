@@ -12,8 +12,9 @@ This page outlines how I work and where I add value.
 - Translate between engineering, product, and leadership so decisions are made on shared facts.
 - Turn competing priorities into a single, visible plan with clear owners and checkpoints.
 - Surface assumptions early; remove ambiguity in requirements, interfaces, and timelines.
-{% comment %}- Keep momentum: short feedback loops, crisp reviews, and visible risk management.{% endcomment %}
+- Keep momentum: short feedback loops, crisp reviews, and visible risk management.
 </details>
+
 {% comment %}
 <details>
   <summary><strong>Selected outcomes</strong></summary>
