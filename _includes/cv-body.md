@@ -12,16 +12,16 @@ This page outlines how I work and where I add value.
 - Translate between engineering, product, and leadership so decisions are made on shared facts.
 - Turn competing priorities into a single, visible plan with clear owners and checkpoints.
 - Surface assumptions early; remove ambiguity in requirements, interfaces, and timelines.
-- Keep momentum: short feedback loops, crisp reviews, and visible risk management.
+{% comment %}- Keep momentum: short feedback loops, crisp reviews, and visible risk management.{% endcomment %}
 </details>
-
-/*<details>
+{% comment %}
+<details>
   <summary><strong>Selected outcomes</strong></summary>
 
 - Reduced cross-team review cycles by **40%** by standardizing decision briefs and hand-offs.
 - Unblocked a stalled RF/firmware integration in **3 weeks** by reframing requirements and creating a joint test plan.
 - Delivered a multi-disciplinary prototype **on time** by aligning milestones across three vendors and two internal teams.
-</details> */
+</details> 
 
 <details>
   <summary><strong>Project snapshots</strong></summary>
@@ -40,3 +40,4 @@ This page outlines how I work and where I add value.
 
 **Role:** Facilitator  
 **Situation:** Dif
+{% endcomment %}
