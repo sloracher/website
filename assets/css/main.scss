@@ -84,6 +84,31 @@ details details {
 
 
 
+/* Elegant body styling */
+.page__content { max-width: 64ch; }              /* slightly narrower for calm reading */
+.page__content p { hyphens: auto; }
+
+/* Lead paragraph: a touch larger + softer color */
+.page__content .lead {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #374151;                                 /* muted slate */
+  margin-bottom: 0.85rem;
+}
+
+/* Collapsibles: clearer affordance + tidy lists */
+details { margin: 0 0 .9rem 0; }
+details > summary { cursor: pointer; font-weight: 600; list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary::before {
+  content: "▸"; display: inline-block; margin-right: .5rem; transition: transform .2s ease;
+}
+details[open] > summary::before { transform: rotate(90deg); }
+details ul { padding-left: 1.2rem; margin: .4rem 0 0 0; }
+details li + li { margin-top: .3rem; }           /* breathing room between bullets */
+
+
+
 
 
 /* ===== ultra-compact footer ===== */
