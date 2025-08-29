@@ -4,6 +4,9 @@ With an RF engineering background and a systems view, I translate across discipl
 My focus is clarity: clear priorities, clear ownership, clear paths to delivery.
 This page outlines how I work and where I add value.
 
+
+
+{% comment %}
 {: .lead }
 
 
@@ -16,7 +19,6 @@ This page outlines how I work and where I add value.
 - Keep momentum: short feedback loops, crisp reviews, and visible risk management.
 </details>
 
-{% comment %}
 <details>
   <summary><strong>Selected outcomes</strong></summary>
 
