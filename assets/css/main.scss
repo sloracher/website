@@ -5,38 +5,6 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* ===== Footer polish ===== */
-
-/* 1 + 4) no top line, tighter grey background */
-.page__footer {
-  border-top: none;              /* remove divider line */
-  padding-block: 0.25rem;        /* shrink background height */
-  margin-top: 0.75rem;           /* smaller gap above footer */
-  min-height: 0;                 /* prevent theme min-height */
-}
-
-/* kill any theme pseudo-divider that may appear */
-.page__footer hr,
-.page__footer .wrapper:before {
-  display: none !important;
-  content: none !important;
-}
-
-/* 2 + 3) left-align and smaller text */
-.page__footer,
-.page__footer .copyright {
-  text-align: left !important;
-  margin: 0;
-  font-size: 0.9rem;             /* reduce size to match sidebar links */
-  line-height: 1.4;
-}
-
-/* keep footer width aligned with content (optional) */
-.page__footer .wrapper { max-width: 68ch; }
-
-
-
-
 .author__bio .attribution {
   display: block;
   margin-top: 0.25rem;
@@ -89,3 +57,33 @@ body {
 /* Let LinkedIn icon follow the same color as the other icons */
 .author__urls .fa-linkedin,
 .author__urls .fa-linkedin-in { color: currentColor; background: none; }
+
+
+/* ===== Footer polish ===== */
+
+/* 1 + 4) no top line, tighter grey background */
+.page__footer {
+  border-top: none;              /* remove divider line */
+  padding-block: 0.25rem;        /* shrink background height */
+  margin-top: 0.75rem;           /* smaller gap above footer */
+  min-height: 0;                 /* prevent theme min-height */
+}
+
+/* kill any theme pseudo-divider that may appear */
+.page__footer hr,
+.page__footer .wrapper:before {
+  display: none !important;
+  content: none !important;
+}
+
+/* 2 + 3) left-align and smaller text */
+.page__footer,
+.page__footer .copyright {
+  text-align: left !important;
+  margin: 0;
+  font-size: 0.9rem;             /* reduce size to match sidebar links */
+  line-height: 1.4;
+}
+
+/* keep footer width aligned with content (optional) */
+.page__footer .wrapper { max-width: 68ch; }
