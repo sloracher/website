@@ -62,8 +62,8 @@ body {
 /* ===== ultra-compact footer ===== */
 .page__footer {
   /* 4) shrink grey background height */
-  padding-top: 0.18rem !important;
-  padding-bottom: 0.18rem !important;
+  padding-top: 0.12rem !important;
+  padding-bottom: 0.12rem !important;
   margin-top: 0.6rem !important;
   border-top: none !important;
   min-height: 0 !important;
@@ -81,7 +81,7 @@ body {
 .page__footer p,
 .page__footer .copyright {
   /* 3) smaller type, no extra spacing */
-  font-size: 0.85rem !important;
+  font-size: 0.6rem !important;
   line-height: 1.35 !important;
   margin: 0 !important;
   text-align: left !important;
