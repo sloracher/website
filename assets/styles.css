@@ -64,6 +64,29 @@ body{
 .links a{ color: inherit; text-decoration: none; }
 .links a:hover{ text-decoration: underline; }
 
+/* Inline links with "•" separators */
+.sidebar .links ul{
+  list-style: none;
+  padding: 0;
+  margin: .75rem 0 0;
+  display: flex;
+  flex-wrap: wrap;           /* wrap on small screens */
+  align-items: center;
+}
+.sidebar .links li{ display: inline; }
+.sidebar .links li + li::before{
+  content: "•";
+  margin: 0 .55rem;
+  color: var(--muted);
+}
+.sidebar .links a{
+  text-decoration: none;
+}
+.sidebar .links a:hover{
+  text-decoration: underline;
+}
+
+
 /* ---------- Content ---------- */
 .content{ max-width: var(--content); }
 .content > * + * { margin-top: 1rem; }
