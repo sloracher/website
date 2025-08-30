@@ -123,3 +123,19 @@ details li + li{ margin-top: .35rem; }
   line-height: 1.5;
 }
 
+/* unify text body size to medium */
+:root { --body-text: 1rem; }  /* 16px; try 0.98–1.05 to taste */
+
+.content { font-size: var(--body-text); line-height: 1.6; }
+
+/* intro paragraph uses the same size as the rest */
+.content .lead { font-size: var(--body-text); line-height: 1.6; }
+
+/* collapsible sections use the same size too */
+.content details { font-size: var(--body-text); line-height: 1.6; }
+.content details summary { font-size: 1em; font-weight: 600; }
+
+/* optional: nudge up slightly on wide screens */
+@media (min-width: 1000px){
+  :root { --body-text: 1.03rem; }  /* +3% on desktop if you like */
+}
