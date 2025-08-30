@@ -139,3 +139,16 @@ details li + li{ margin-top: .35rem; }
 @media (min-width: 1000px){
   :root { --body-text: 1.03rem; }  /* +3% on desktop if you like */
 }
+
+/* Block-justify the sidebar quote */
+.sidebar .quote,
+.sidebar .quote p{
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+.sidebar .quote footer{
+  display: block;
+  margin-top: .35rem;
+  text-align: left;        /* keep the attribution left */
+}
