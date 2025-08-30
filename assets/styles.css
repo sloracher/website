@@ -97,3 +97,17 @@ details li + li{ margin-top: .35rem; }
   .avatar img{ width: 96px; height: 96px; }
   .content{ max-width: 100%; }
 }
+
+/* unify small text (quote, links, footer) */
+:root { --small-text: .90rem; }        /* taste: .88–.92rem */
+
+.sidebar .quote,
+.sidebar .quote footer,
+.sidebar .links,
+.sidebar .links a,
+.site-footer,
+.site-footer p {
+  font-size: var(--small-text);
+  line-height: 1.5;
+}
+
