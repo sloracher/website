@@ -175,3 +175,25 @@ details li + li{ margin-top: .35rem; }
   margin-top: .35rem;
   text-align: left;        /* keep the attribution left */
 }
+
+/* Header links under the title, single line with dot separators */
+.site-header .site-links{
+  margin-top: .35rem;
+  font-size: var(--small-text, .90rem); /* same small size you defined */
+  line-height: 1.4;
+  white-space: normal;                   /* allow wrap on small screens */
+}
+
+.site-header .site-links a{
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;                  /* baseline consistency */
+  align-items: baseline;
+}
+
+.site-header .site-links a + a::before{
+  content: "•";
+  color: var(--muted, #6b7280);
+  margin: 0 .55rem;
+}
+.site-header .site-links a:hover{ text-decoration: underline; }
