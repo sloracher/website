@@ -26,8 +26,20 @@ body{
 .wrap{ max-width: var(--container); margin: 0 auto; padding: var(--gutter); }
 
 /* ---------- Header ---------- */
-.site-header { padding-block: 1rem; border-bottom: 1px solid var(--line); }
-.site-title { font-weight: 700; text-decoration: none; color: inherit; letter-spacing: -0.01em; }
+/* .site-header { padding-block: 1rem; border-bottom: 1px solid var(--line); } */
+/* .site-title { font-weight: 700; text-decoration: none; color: inherit; letter-spacing: -0.01em; } */
+
+.site-header .site-title{
+  font-size: 1.35rem;   /* mobile/tablet */
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 900px){
+  .site-header .site-title{
+    font-size: 1.6rem;  /* desktop */
+  }
+}
 
 /* ---------- Layout ---------- */
 .layout{
