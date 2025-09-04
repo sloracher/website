@@ -2,11 +2,9 @@
 # Site Settings
 # =========================
 title: "Stefanie Loracher"
-email: "s.loracher@tuta.io"
+email: "loracher@tuta.io"
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Introduction to an interdisciplinary team coordinator with a multitude of interests.
 github_username: "sloracher"
 minimal_mistakes_skin: "default"
 search: false
@@ -80,7 +78,7 @@ author:
       url: "https://github.com/sloracher"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:s.loracher[at]tuta.io"
+      url: "mailto:loracher[at]tuta.io"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
